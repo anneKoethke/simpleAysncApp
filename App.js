@@ -95,7 +95,7 @@ export default function App() {
     }
   }
 
-  // TODO: does it clear all app data from all RN apps?
+  // (https://reactnative.dev/docs/security): Async Storage is not shared between apps: every app has its own sandbox environment and has no access to data from other apps.
   const clearStorage = async () => {
     try {
       await AsyncStorage.clear();
