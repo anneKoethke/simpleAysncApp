@@ -16,7 +16,7 @@ export default function App() {
     // set States to null
     resetStates();
     getDataFromDB();
-  }, []); // Or [] if effect doesn't need props or state
+  }, []); // when [], only called when Component is mounted and unmounted; [someValue] -> called when someValue changes
 
   // to get an initial State at App opening and all updates to DB
   const resetStates = () => {
