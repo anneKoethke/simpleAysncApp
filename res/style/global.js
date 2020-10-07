@@ -29,5 +29,24 @@ export const globalStyles = StyleSheet.create({
     marginRight: 10,
     padding: 10,
     minWidth: 100,
-  }
+  },
+  cardContainer: {
+    flexDirection: 'row',
+    marginVertical:5,
+    backgroundColor: 'white',
+    borderRadius: 5,
+    borderWidth: 1,
+    borderColor: 'black',
+  },
+  card: {
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+  },
+  fatCardText: {
+    fontWeight: 'bold',
+  },
+  controlBtnContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around'
+  },
 });
