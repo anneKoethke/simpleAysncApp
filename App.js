@@ -110,9 +110,9 @@ export default function App() {
     <SafeAreaView style={globalStyles.container}>
       <StatusBar style="auto" />
 
-      <Text style={globalStyles.h1}>Simple AsyncStorgae App</Text>
+      <Text style={globalStyles.h1}>Simple AsyncStorage App</Text>
       
-      <Text>Name:</Text>
+      <Text style={globalStyles.h2}>Name:</Text>
       <TextInput 
         style= {globalStyles.input}
         onChangeText={val => setName(val)}
