@@ -54,7 +54,7 @@ export default function App() {
       try {
         const jsonValue = JSON.stringify({key, name})
         await AsyncStorage.setItem('@SAA_name_key_'+key, jsonValue);
-        console.log("added '" + name + "' with key =", key, "to db.");
+        console.log("ADDED '" + name + "' with key =", key, "to db.");
       } catch(e) {
         alert("SAVE_ERR: "+e);
       }
@@ -70,11 +70,10 @@ export default function App() {
   };
 
   const removeName = async (name, key) => {
-    console.log(name, "- key:", key);
     // remove from DB
     try {
       await AsyncStorage.removeItem('@SAA_name_key_'+key);
-      console.log('removed:', name, "with key:", key)
+      console.log("REMOVED '"+ name +"' with key =", key)
     } catch(e) {
       alert('REMOVE_ERR:' + e);
     }
@@ -89,7 +88,7 @@ export default function App() {
     let allKeys = []
     try {
       allKeys = await AsyncStorage.getAllKeys();
-      console.log("showAllKeys => allKeys", allKeys);
+      console.log("showAllKeys() => allKeys:", allKeys);
     } catch(e) {
       alter("GET_ALL_KEYS_ERR: "+e);
     }
@@ -103,7 +102,7 @@ export default function App() {
     } catch(e) {
       alert("CLEAR_STORE_ERR: "+e);
     }
-    console.log("storage was cleared");    
+    console.log("storage was CLEARED");    
   }
 
   return (
