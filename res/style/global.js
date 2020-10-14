@@ -32,7 +32,7 @@ export const globalStyles = StyleSheet.create({
   },
   cardContainer: {
     flexDirection: 'row',
-    marginVertical:5,
+    marginBottom: 10,
     backgroundColor: 'white',
     borderRadius: 5,
     borderWidth: 1,
@@ -47,6 +47,7 @@ export const globalStyles = StyleSheet.create({
   },
   controlBtnContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    paddingTop: 20,
   },
 });
